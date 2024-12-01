@@ -1,0 +1,43 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.grid-item {
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-text {
+  font-size: 4rem;
+}
+.grid-item-text:hover {
+  scale: 1.5;
+}
+
+.grid-dev {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.grid-message {
+  display: flex;
+  align-items: center;
+}
+
+.text-span {
+  font-size: 3rem;
+}
+.icon-span {
+  font-size: 4rem;
+}

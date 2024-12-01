@@ -1,33 +1,96 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 6rem;
+  max-width: 1200px;
+}
+
+.lign-number-div,
+.tic-tao-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label,
+legend {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.input {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  /* width: 80%; */
+}
+
+.tic-tao-div legend {
+  margin: 1.5rem 0 1rem;
+}
+
+.tic-tao-div .radio {
+  margin: 0 1rem;
+}
+.button-div {
+  display: flex;
+  gap: 2rem;
+}
+.button {
+  padding: 1rem 2rem;
+  width: 12rem;
+  height: 4rem;
   color: white;
+  background-color: purple;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.button-restart {
+  width: 15rem;
+  height: 4rem;
+  margin-top: 3rem;
 }
 
+.icon-div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 10px 0;
+}
+.color-div {
+  margin: 2rem 0;
+}
+.color-div label {
+  margin-right: 2rem;
+}
+
+.error {
+  margin: 3rem 0;
+  color: rgb(205, 20, 20);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
